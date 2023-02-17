@@ -12,14 +12,35 @@
 
         <h3 class="text-4xl mb-6">Simple Cart</h3>
 
-        <input type="text" name="" id="" placeholder="Item Name" class="h-12 w-64 px-2">
-        <input type="text" name="" id="" placeholder="Item Description" class="h-12 w-64 my-3 px-2">
-        <input type="number" name="" id="" placeholder="Item Cost" class="h-12 w-64 mb-6 px-2">
-        <button class="bg-emerald-300 h-12 w-24 rounded hover:bg-emerald-400 focus:outline-none">Insert</button>
+        <input type="text" name="" id="insert-name" placeholder="Item Name" class="h-12 w-64 px-2">
+        <input type="text" name="" id="insert-desc" placeholder="Item Description" class="h-12 w-64 my-3 px-2">
+        <input type="number" name="" id="insert-cost" placeholder="Item Cost" class="h-12 w-64 mb-6 px-2">
+        <button id="insert-btn" class="bg-emerald-300 h-12 w-24 rounded hover:bg-emerald-400 focus:outline-none">Insert</button>
 
     </section>
-    <section id="items-container">
+    <section id="items-container" class="min-h-screen py-6 flex flex-col items-center justify-start">
+
+        <h3 class="text-4xl mb-6">Items List</h3>
+
+        <div id="example" class="bg-emerald-300 w-48 h-auto py-2 px-4 mb-3 text-center">
+            <h2>Example Item</h2>
+            <p>Description of the Item</p>
+            <p>200</p>
+            <button class="h-8 w-16 bg-rose-300">Delete</button>
+        </div>
+
+        <div id="example2" class="bg-emerald-300 w-48 h-auto py-2 px-4 mb-3 text-center">
+            <h2>Example Item2</h2>
+            <p>Description of the Item</p>
+            <p>800</p>
+            <button class="h-8 w-16 bg-rose-300">Delete</button>
+        </div>
+
+
 
     </section>
+
+    <script src="js/cart.js"></script>
+
 </body>
 </html>
