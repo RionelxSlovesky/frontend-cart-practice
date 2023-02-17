@@ -39,6 +39,14 @@ insertBtn.addEventListener("click", function(){
     itemContainer.appendChild(itemCost);
     itemContainer.appendChild(itemBtn);
 
+    // implementing delete
+    itemBtn.addEventListener("click", function(event){
+        console.log(itemBtn.parentNode.parentNode);
+
+        itemBtn.parentNode.parentNode.removeChild(event.target.parentNode);
+
+     })
+
     itemsContainer.appendChild(itemContainer);
 
 
