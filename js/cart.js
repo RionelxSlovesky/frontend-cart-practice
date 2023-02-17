@@ -10,11 +10,6 @@ const itemsContainer = document.getElementById("items-container");
 const itemContainerClasses = ["bg-emerald-300", "w-48", "h-auto", "py-2", "px-4", "mb-3", "text-center"];
 const itemBtnClasses = ["h-8", "w-16", "bg-rose-300"];
 
-function setValueToId(x,id){
-    id.value = x;
-}
-
-
 
 insertBtn.addEventListener("click", function(){
     
@@ -49,14 +44,11 @@ insertBtn.addEventListener("click", function(){
 
     itemsContainer.appendChild(itemContainer);
 
-
+    insertName.value = '';
+    insertDesc.value = '';
+    insertCost.value = '';
 
 })
 
-{/* <div id="example" class="bg-emerald-300 w-48 h-auto py-2 px-4 mb-3 text-center">
-            <h2>Example Item</h2>
-            <p>Description of the Item</p>
-            <p>200</p>
-            <button class="h-8 w-16 bg-rose-300">Delete</button>
-        </div> */}
+
 
